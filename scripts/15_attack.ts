@@ -1,12 +1,12 @@
 import {ethers} from "hardhat"
 import dotenv from 'dotenv'
-import {GatekeeperOne} from "../typechain-types";
+import type {GatekeeperTwo} from "../typechain-types";
 
 dotenv.config()
 
 async function main() {
     const isLocalTest = false
-    let target: GatekeeperOne
+    let target: GatekeeperTwo
     if (isLocalTest) {
         target = await ethers.deployContract('GatekeeperTwo')
     } else {
