@@ -1,7 +1,5 @@
 import {ethers} from "hardhat"
 import dotenv from 'dotenv'
-import type {Preservation} from "../typechain-types";
-import {solidityPackedKeccak256} from "ethers/src.ts/hash/solidity";
 
 dotenv.config()
 
